@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Article Navigation
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.article {
+    position: relative;
+}
+
+.article-nav {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+
+    width: 10rem;
+    padding-top: 6rem;
+
+    transform: translateZ(0);
+}
+
+
+/* Header
+   ========================================================================== */
+.article-nav__header {
+    margin-top: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* Item
+   ========================================================================== */
+.article-nav__item {
+    display: block;
+    padding: .2em 0;
+
+    text-align: left;
+    text-decoration: none;
+    color: $black;
+
+    transition: color .3s ease;
+
+    &:hover, &:focus {
+        color: #789CCB;
+    }
+}
+
+.article-nav__item--active {
+    color: #789CCB;
+}

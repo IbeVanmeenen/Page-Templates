@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+.section {
+    position: relative;
+    padding: 4em 2em 1em 30rem;
+
+    &:last-child {
+
+        .section__content {
+            border-bottom: 0;
+        }
+    }
+}
+
+.section--fixed {
+
+    .section__info {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .section__content {
+        opacity: 1;
+    }
+}
+
+
+
+/* Section info
+   ========================================================================== */
+.section__info {
+    position: absolute;
+    top: 0;
+    left: 15rem;
+
+    width: 13rem;
+    padding-top: 5.7rem;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .3s ease;
+    transform: translateZ(0);
+}
+
+.section__info__header {
+    color: #789CCB;
+    font-size: 1.9rem;
+    margin: 0 0 .5rem 0;
+}
+
+.section__info__intro {
+    margin: 0 0 .8rem 0;
+    color: $grey;
+}
+
+.section__info__item {
+    display: block;
+    padding: .2em 0;
+    color: $black;
+
+    text-decoration: none;
+
+    transition: color .3s ease;
+
+    &:before {
+        content: '›';
+        margin-right: .4rem;
+    }
+
+    &:hover, &:focus {
+        color: #45bcd2;
+    }
+}
+
+.section__info__item--active {
+    color: #45bcd2;
+}
+
+
+
+/* Section Content
+   ========================================================================== */
+.section__content {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.section__content__img {
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Base
+
+   ========================================================================== */
+
+.main-header {
+    z-index: 20;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+
+    border-bottom: 8rem solid $white;
+    text-align: center;
+    background: url('../img/steps.jpg') top left no-repeat;
+    background-size: cover;
+}
+
+.main-header__head {
+    flex: 1;
+
+    font-size: 8rem;
+    color: $white;
+}

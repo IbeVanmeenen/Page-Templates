@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Scroll Sections
+   ========================================================================== */
+
+
+/* General
+   ========================================================================== */
+.scroll-section {
+    position: relative;
+
+    overflow: hidden;
+    background: $blue;
+}
+
+
+/* Header
+   ========================================================================== */
+.scroll-section__header {
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 85vh;
+
+    background: $yellow;
+
+    &:after {
+        position: absolute;
+
+    }
+}
+
+.scroll-section__header__figure {
+
+}
+
+.scroll-section__header__figure__img {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+    transform: translate3d(-50%, 0, 0);
+
+    will-change: transform;
+}
+
+.scroll-section__header__figure__head {
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    left: 0;
+
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    color: #444;
+    font-size: 3.5rem;
+    line-height: 15vh;
+    font-weight: bold;
+
+    transform: translate3d(0, 0, 0);
+
+    will-change: transform;
+
+    transition: font-size .4s ease;
+}
+
+
+/* Scroll Helper
+   ========================================================================== */
+.scroll-section__scroll-helper {
+    transform: translate3d(0, 0, 0);
+
+    will-change: transform;
+}
+
+
+/* Sections
+   ========================================================================== */
+.scroll-section__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110vw;
+    height: 100vh;
+    overflow: hidden;
+
+    border-top: 15vh solid $yellow;
+
+    background: $blue;
+}
+
+.scroll-section__section--first {
+    transform: translate3d(0, 0, 0);
+    margin-bottom: 100vh;
+}
+
+.scroll-section__section--second {
+    background: darken($blue, 0%);
+    transform: translate3d(100vw, -200vh, 0);
+    margin-bottom: 0;
+}
+
+
+
+
+/* Scroll item
+   ========================================================================== */
+.scroll-item {
+    display: block;
+    margin: 0;
+}
+
+.scroll-item__img {
+    float: left;
+    margin-right: 2rem;
+}
+
+.scroll-item__caption {
+    width: auto;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: $white;
+
+    overflow: hidden;
+}
+
+.scroll-item__caption__emp {
+    display: block;
+    margin: 1rem 0;
+
+    font-size: 6rem;
+    line-height: 1;
+    color: $yellow;
+}
